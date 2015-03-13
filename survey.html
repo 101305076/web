@@ -50,27 +50,27 @@
         <p>Which form of transport do you use?
            (choose as many as you like)</P>
            
-           <input type="checkbox" id="walking" value="walking" ><label for="walking">walking</label>
+           <input type="checkbox" id="walking" name="trans" value="walking" ><label for="walking">walking</label>
            
-           <input type="checkbox" id="bike"  value="bike" ><label for="bike">bike</label>
-           
-           
-           <input type="checkbox" id="motorcycle" value="motorcycle" ><label for="motorcycle">motorcycle</label>
+           <input type="checkbox" id="bike" name="trans" value="bike" ><label for="bike">bike</label>
            
            
-           <input type="checkbox" id="car" value="car" ><label for="car">car</label>
+           <input type="checkbox" id="motorcycle" name="trans" value="motorcycle" ><label for="motorcycle">motorcycle</label>
            
            
-           <input type="checkbox" id="bus" value="bus" ><label for="bus">bus</label>
+           <input type="checkbox" id="car" name="trans" value="car" ><label for="car">car</label>
+           
+           
+           <input type="checkbox" id="bus" name="trans" value="bus" ><label for="bus">bus</label>
            
           
-           <input type="checkbox" id="metro" value="metro" ><label for="metro">metro</label>
+           <input type="checkbox" id="metro" name="trans" value="metro" ><label for="metro">metro</label>
            
            
-           <input type="checkbox"  id="train" value="train" ><label for="train">train</label>
+           <input type="checkbox"  id="train"  name="trans" value="train" ><label for="train">train</label>
            
            
-           <input type="checkbox"  id="trans" value="airplane" ><label for="airplane">airplane</lable>
+           <input type="checkbox"  id="trans" name="trans" value="airplane" ><label for="airplane">airplane</lable>
        </li>
 
        <li>
@@ -103,9 +103,10 @@
                  
           
        <li>
-       	<p>Which industry do you work in or are most involved with?*</p>        
-           <input type="text" required id="industry" placeholder="Type or Select an option"autocomplete="off" >
+       	<p>Which industry do you work in or are most involved with?</p>        
+           <input type="text" id="industry" placeholder="Type or Select an option"autocomplete="off" >
            <select name="urindustry">
+           <option value="other">Industries</option>
            <option value="Accounting">Accounting</option>
            <option value="Writing & Editing">Editing</option>
            <option value="Animation">Animation</option>
@@ -120,7 +121,7 @@
        <li>
        	<p>
        	   <label for="tel">Your Phone</label>
-           <input type="tel" name="phone" id="tel" placeholder="886-911222333">
+           <input type="tel" name="phone" id="tel" placeholder="886-911-222-333">
         </p>
        </li>
 
@@ -134,14 +135,14 @@
        <li>
        	<p>
        	   <lable for="web">Personal website</lable>
-       	   <input type="url" name="web" id="web"placeholder="http://">
+       	   <input type="url" name="web" id="web" placeholder="http://">
        	</p>
        </li>
 
 
     </ol>
         
-        <input type ="submit" value="Done!"maxlength="100">
+        <input type ="submit" value="Submit!">
 
    </form>
 
