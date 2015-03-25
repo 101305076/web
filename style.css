@@ -5,15 +5,16 @@ html {
 	}
 body {
         color: #333300;
-         
+        background-color:rosybrown;
         
         margin-left: 500px;
         font:70% ;
         font-family: 'Indie Flower', monospace;
-        text: center;
+        
         vertical-align: middle;
-        background:url("res.png")#00D repeat scroll;
+        background-image:url("res.png")#00D repeat scroll;
 	    position:relative;
+
     
 	    background-color: transparent;
 	    background-image: url("background.jpg");
@@ -27,9 +28,10 @@ h1{
        -webkit-transform: rotate(26deg);
        text-align: center;
   
-       color:brown;
+       color:white;
+       text-shadow:2px  2px  2px darkred ;
 
-       font-size:60px; 
+       font-size:55px; 
        margin-top:60px;
        margin-right:3px;
        width: auto ;
@@ -39,7 +41,9 @@ h1{
        
        vertical-align: middle;
        border-radius:0.7em;
-
+       background-image: url("dog.png");
+       background-repeat: repeat-x; 
+       background-size:10% ;
        
    }
 h4{ 
@@ -65,6 +69,7 @@ h4{
 	background:khaki;
 	vertical-align: bottom;
 
+
 }
 
 
@@ -80,24 +85,27 @@ h4{
     background-repeat: repeat;                
     background-color: transparent;
     border-radius:1em;
-
-
 	
 }
+p::first-letter {
+    font-size: 200%;
+    color: #8A2BE2;
+  }
+
 .TA{
     
 	background:pink;
-	margin-left: 5px ;
+	margin-left: auto ;
+	margin-right:auto;
 	width:700px;
 	height:auto;
 	padding:1em;
 }
+
 #name{
 	
 	display: inline-block;
-    line-height:18px;
-
-    
+    line-height:18px;   
 }
 
 ol{
@@ -105,23 +113,69 @@ ol{
 	width:700px;
 	height:auto;
 	margin-top:4px;
-	margin-left:5px;
-    padding-left: auto;
+	margin-left: auto ;
+	margin-right:auto;
+    padding-left: 50px;
 	
 }
+ol {
+    list-style-type: none;
+    list-style-type: decimal !ie; /*IE 7- hack*/
+     
+    margin: 0;
+    margin-left: auto;
+    margin-right:auto;
+    padding: 0;
+     
+    counter-reset: li-counter;
+}
+ol > li{
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 0.5em;
+    min-height: 1em;
+    border-left: 2px solid #CCCCCC;
+}
+ol > li:before {
+    position: absolute;
+    top: 0;
+    left: -1.5em;
+    width: 0.8em;
+     
+    font-size: 1.5em;
+    line-height: 1;
+    
+    text-align: right;
+    color: #464646;
+ 
+    content: counter(li-counter);
+    counter-increment: li-counter;
+}
+
+.TAA>li{
+  padding:3px 10px;
+  width:auto;
+}
+
+.TAA>li:nth-child(odd){
+  background-color:rgba(255,255,255,0.5);
+}
+
+
+
 ul{
 	background:pink;
 	width:700px;
 	height:auto;
 	margin-top:4px;
+	margin-left: auto ;
+	margin-right:auto;
 	
 }
 em{
       color:red;
   }
-section{
-	
-}
+
 
 footer{
   text-align: center; padding: 10px; background:wheat;
@@ -131,7 +185,26 @@ footer{
 
 
 }
+
+#images img{
+  width:60%;
+  padding:1em;
+  background-color:#ffffff;
+  box-sizing:border-box;
+  margin-left: 200px ;
+  margin-right:auto;
+}
+
 footer:hover{
   opacity: 1;
-  background:skyblue
+  background:orange;
+}
+a:link{
+	color:blue;
+}
+a:active{
+	color:red
+}
+a:visited{
+    color:darkred;
 }
