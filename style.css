@@ -1,0 +1,137 @@
+/* basic elements */
+html {
+	margin: 0;
+	
+	}
+body {
+        color: #333300;
+         
+        
+        margin-left: 500px;
+        font:70% ;
+        font-family: 'Indie Flower', monospace;
+        text: center;
+        vertical-align: middle;
+        background:url("res.png")#00D repeat scroll;
+	    position:relative;
+    
+	    background-color: transparent;
+	    background-image: url("background.jpg");
+        background-repeat: repeat-y; 
+        background-size:30% ;
+        background-attachment: fixed;
+      }
+
+h1{
+       -webkit-transform: scale(0.5);
+       -webkit-transform: rotate(26deg);
+       text-align: center;
+  
+       color:brown;
+
+       font-size:60px; 
+       margin-top:60px;
+       margin-right:3px;
+       width: auto ;
+       height:60px;
+       padding:2px 2px;
+       background-color:skyblue;
+       
+       vertical-align: middle;
+       border-radius:0.7em;
+
+       
+   }
+h4{ 
+    display:inline-block;
+	margin-left: 0.2em;
+	padding:auto;
+	color:#922;
+	width:20em;
+	height:auto;
+	line-height:18px;
+	background:pink;
+	border:4px solid darkred;
+	
+
+}
+.intr{
+	display: inline-block;
+    line-height:15px;
+    border : 5px solid orange;
+	
+	padding:0.7em 0.2em;
+	height:auto;
+	background:khaki;
+	vertical-align: bottom;
+
+}
+
+
+.intro{
+	display: inline-block;
+    line-height:15px;
+    border : 3px solid darkorange;
+    margin-left:2px;
+	padding:0.7em 1em;
+	background:peachpuff;
+	background-image:  url("swirl.png");
+    background-position: right;
+    background-repeat: repeat;                
+    background-color: transparent;
+    border-radius:1em;
+
+
+	
+}
+.TA{
+    
+	background:pink;
+	margin-left: 5px ;
+	width:700px;
+	height:auto;
+	padding:1em;
+}
+#name{
+	
+	display: inline-block;
+    line-height:18px;
+
+    
+}
+
+ol{
+	background:pink;
+	width:700px;
+	height:auto;
+	margin-top:4px;
+	margin-left:5px;
+    padding-left: auto;
+	
+}
+ul{
+	background:pink;
+	width:700px;
+	height:auto;
+	margin-top:4px;
+	
+}
+em{
+      color:red;
+  }
+section{
+	
+}
+
+footer{
+  text-align: center; padding: 10px; background:wheat;
+  -webkit-transition-property: opacity;
+  -webkit-transition-duration: .5s;
+  opacity: .7;
+
+
+}
+footer:hover{
+  opacity: 1;
+  background:skyblue
+}
