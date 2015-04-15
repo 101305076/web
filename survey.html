@@ -21,23 +21,23 @@
     <style type="text/css"> 
       body{ 
         color: #333300;
-        font-size:15px;
+        font-size:20px;
         
-        margin-left: 500px;
-        margin-right:auto;
+        
         font:70% ;
         font-family: 'Indie Flower', sans-serif;
         
         vertical-align: middle;
         background-image:url("res.png")#00D repeat scroll;
         
-        margin-left:500px;
+        margin-left:22vw;
     
         background-color: transparent;
         background-image: url("background.jpg");
         background-repeat: repeat-y; 
-        background-size:30% ;
+        background-size:22% ;
         background-attachment: fixed; 
+
     } 
     p::first-letter {
     font-size: 150%;
@@ -48,7 +48,7 @@
      list-style-type: decimal !ie; /*IE 7- hack*/
      
      margin: 0;
-     margin-left: 4em;
+     margin-left: 3vw;
      padding: 0;
      
      counter-reset: li-counter;
@@ -59,6 +59,8 @@
      margin-bottom: 20px;
      padding-left: 0.5em;
      min-height: 3em;
+
+
     }
     
     ol> li:before {
@@ -76,7 +78,7 @@
  
      border: 3px solid #c5c5c5;
      border-radius: 50%;
-     background-color: darkgray;
+     background-color:darkred;
      content: counter(li-counter);
      counter-increment: li-counter;
      }
@@ -91,22 +93,28 @@
       font-size: 23px;
       color:saddlebrown;
       padding:0.5em;
+      font-size: 30px;
+
     }
 
     h1{
-      font-size: 40px;
-      margin-left: 350px;
-      color:darkred;
+      font-size: 60px;
+      margin-left: 10vw;
+      
+      color:cornflowerblue;
     }
      .submit{
       font-size:2em;
       color:white ;
 
-      background:dimgray transparent;
+      background:cornflowerblue;
 
       font:Arial;
-      margin-left: 400px;
-      border:none;
+      
+      border-color:black;
+      margin-left: 35vw;
+
+      
       
      }
     .submit:hover{
@@ -126,31 +134,38 @@
 
 
     </head>
-  <body>
-
-    <h1>About You</h1>
+  <body >
+  <div class="container">
+<div class="row">
+  
+    <h1 class=".col-xs-8 col-md-8 col-md-8" >About You</h1>
     <form >
 
-     <ol>
-      <li>
+     <ol >
+      
+     <li >
+
       <fieldset>
-       <legend class="legend">Basic</legend>
+
+      <legend class="legend">Basic</legend>
+       <center>
 
        	<p>
+        
        	   <label for="what">Your name*</label>
            <input type="text" name="n"required id="what" placeholder="Jeremy Lin"autofocus>
         </p>
        
 
-       <p>What is your gender?*
+       <p>What is your gender?*</p>
        	  
           
            <input type ="radio" name="gender" id="male"value="male" required>
            <label for="Male">Male</label>
            </p>
           
-           <input type ="radio" name="gender" value="female" required>Female</label>
-           <label for="Female">Male</label>
+           <input type ="radio" name="gender" value="female" required>
+           <label for="Female">FeMale</label>
            
           
        
@@ -158,16 +173,23 @@
        <P>
        	    <label for="birth">Birthday*</label>
             <input type="date" required id="birth" >
-            </P></li>
+            </P>
+
+             </center>
+            </li>
        
        </fieldset>
 
-      <li>
+      <li >
        <fieldset>
-        <legend class="legend">Transportation</legend>
+        <legend class="legend" >Transportation</legend>
+          <center>
+        
 
         <p>Which form of transport do you use?
            (choose as many as you like)</P>
+
+           <div class="abgne-menu-20140101-2">
            
            <input type="checkbox" id="walking" name="trans" value="walking" ><label for="walking">walking</label>
            
@@ -190,6 +212,9 @@
            
            
            <input type="checkbox"  id="trans" name="trans" value="airplane" ><label for="airplane">airplane</lable>
+           </div>
+
+           </center>
        </li>
 
        </fieldset>
@@ -197,6 +222,8 @@
       <li>
        <fieldset>
        <legend class="legend">Education</legend>
+         <center>
+
        	<p>What is the highest level of education you have completed?*</P>
              
            <input type="radio" name="edu" value="e0"required id="e0">
@@ -222,13 +249,16 @@
            <input type="radio" name="edu" value="e8"required id="e8"> 
            <label for ="e8">I prefer not to answer</lable>
            </p>
-       
+           
+           </center>
           </fieldset>  
           </li>     
           
        <li>
        <fieldset>
         <legend class="legend">Work</legend>
+          <center>
+
        	<p>Which industry do you work in or are most involved with?</p>        
            <input type="text" id="industry" placeholder="Type or Select an option"autocomplete="off" >
            <select name="urindustry">
@@ -244,11 +274,15 @@
            </select>
        
        </fieldset>
+       </center>
+       </li>
 
        <li>
 
        <fieldset>
         <legend class="legend">Contact</legend>
+         <center>
+
        	<p>
        	   <label for="tel">Your Phone</label>
            <input type="tel" name="phone" id="tel" placeholder="886-911-222-333">
@@ -267,6 +301,8 @@
        	   <lable for="web">Personal website</lable>
        	   <input type="url" name="web" id="web" placeholder="http://">
        	</p>
+
+        </center>
        </li>
 
 
